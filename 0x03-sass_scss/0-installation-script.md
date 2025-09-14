@@ -3,33 +3,20 @@
 # Date: 2025-09-14
 
 ##########
-# Option A - Ubuntu (using nvm) - Recommended
-##########
 
-# 1) Install nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
-# 2) Exit the terminal and reopen it (or run the following lines to load nvm immediately)
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
-# 3) Install Node.js v20.16.0
+Step 1: Install Node.js (which includes npm)
+If using NVM (Node Version Manager):
 nvm install 20.16.0
 nvm use 20.16.0
 
-# 4) Verify Node & npm versions
-node -v     # expected: v20.16.0
+Verify installation:
+node -v
 npm -v
 
-# 5) Install SASS (project-local, dev dependency)
-npm install --save-dev sass@3.7.4
-
-# 6) Verify installation
-npx sass --version
-
-##########
-# Option B - Install anywhere (if Node already installed) - Global install
-##########
-
+Step 2: Install Sass
 npm install -g sass@3.7.4
+
+Step 3: Verify Sass installation
 sass --version
+
