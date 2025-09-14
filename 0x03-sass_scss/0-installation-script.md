@@ -4,19 +4,20 @@
 
 ##########
 
-
-Step 1: Install Node.js (which includes npm)
+## Step 1: Install Node.js (which includes npm)
 If using NVM (Node Version Manager):
 nvm install 20.16.0
 nvm use 20.16.0
 
-Verify installation:
+## Step 2:Verify installation:
 node -v
 npm -v
 
-Step 2: Install Sass
+## Step 3: Install Sass
 npm install -g sass@3.7.4
 
-Step 3: Verify Sass installation
+## Step 4: Verify Sass installation
 sass --version
+
+
 
